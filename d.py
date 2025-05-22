@@ -4,7 +4,6 @@ import os
 import librosa
 import numpy as np
 import matplotlib.pyplot as plt
-import IPython.display as ipd
 import torchaudio
 from speechbrain.pretrained.interfaces import foreign_class
 
@@ -34,7 +33,6 @@ def download_and_extract_audio(video_url, output_audio_path="audio.wav"):
     raise FileNotFoundError("Audio extraction failed.")
 
 def debug_audio(audio_path):
-    ipd.display(ipd.Audio(audio_path))
     y, sr = librosa.load(audio_path, sr=None)
     plt.figure(figsize=(10, 2))
     plt.plot(np.linspace(0, len(y)/sr, num=len(y)), y)
