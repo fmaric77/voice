@@ -1,0 +1,9 @@
+streamlit
+speechbrain==0.5.14
+torchaudio
+transformers
+yt-dlp
+pydub
+librosa
+matplotlib
+numpy

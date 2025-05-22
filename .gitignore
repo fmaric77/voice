@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+
+# Model checkpoints and large files
+pretrained_models/
+wav2vec2_checkpoints/
+*.ckpt
+*.bin
+*.safetensors
+*.mp3
+*.wav
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Streamlit and matplotlib cache
+.streamlit/
+.mplconfig/
+
+# Ignore audio output
+/audio.wav
